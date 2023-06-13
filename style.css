@@ -1,88 +1,181 @@
-body{
+body {
     width: 100%;
     height: 100vh;
     font-family: 'Oswald', sans-serif;
 }
 h2,h3,
-p,li{
+p,li {
     color: antiquewhite;
     font-family: 'Oswald', sans-serif;
 }
-.content{
+.content {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
-.content .box-contact{
-    background: rgb(31, 45, 73);
-    max-width: 700px;
-    width: 100%;
+/*side bar*/
+.box-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   
 }
-.content .box-contact img{
-    width: 350px;
-    height: 350px;
-    margin: 70px 0 70px 25%;
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.box-contact hr {
+    margin: 0px;
+}
+
+.box-contact {
+    background: rgb(31, 45, 73);
+}
+
+.box-contact h2,h3,p {
+    margin-left: 10px;
+}
+
+
+.box-contact img {
+    width: 70%;
+    height: 70%;
     border-radius: 175px;
 }
-.content .box-contact p,
-.content .box-contact h2,
-.content .box-contact h3,
-.content .box-contact ul li,
-.content .box-contact hr{
-    margin-left: 50px;
+
+/* about_me */
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.content .box-contact  p,
-.content .box-contact h2,
-.content .box-contact h3,
-.content .box-contact  ul li{
-    padding: 10px;
+
+
+.vertical-line {
+    position: relative;
+  }
+  
+  .vertical-line::before,
+  .vertical-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black;
+  }
+  
+  .vertical-line::before {
+    left: -5px; /* Положение линии */
+  }
+  
+  .vertical-line::after {
+    right: -5px;
+  }
+  
+  .vertical-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 79px; /* Положение линии */
+    width: 2px;
+    background-color: black;
+  }
+  
+  .vertical-line:not(:last-child)::before {
+    height: calc(100% + 50px); /* Увеличение высоты линии */
+  }
+  
+  .vertical-line:last-child::after {
+    display: none;
+  }
+
+
+.circle-left {
+    position: absolute;
+    left: -5px;
+    top: 22px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
 }
-.about_me{
-    margin-top: 50px;
+
+.head {
+    margin-left: 40px;
 }
-.content .about_me h1,
-.content .about_me h2,
-.content .about_me p{
+
+.about_me h2:nth-of-type(2){
+    margin:68px 0 0 40px;
+}
+
+.uk-card {
+    padding: 0;
+    margin-left: 55px;
+}
+
+.about_me hr {
+    border: none;
+    border-top: 1px solid rgb(31, 45, 73); 
+    margin-left: 40px;
+}
+
+.about_me h1,
+.about_me h2,
+.about_me p {
     color: rgb(31, 45, 73);
-    margin: 20px 50px 0 50px;
 }
-.content .about_me p{
+.about_me p {
    font-size: 1.5em;
-   padding-top: 10px;
-   margin-bottom: 75px;
 }
-.content .about_me h1{
-    font-size: 8em;
+
+.about_me h1 {
+    font-size: 5em;
 }
-.content .about_me h2{
-    font-size: 3em ;
+
+.about_me h2 {
+    font-size: 2em ;
 }
-.content .about_me hr{
-    margin-left: 50px;
-}
-.uk-grid{
+
+/*uk-grid*/
+.uk-grid {
     display: flex;
     flex-direction: column;
 }
-.uk-grid div{
-    width: 100%;
+
+.uk-first-column {
+    padding: 0 0 0 30px;
 }
-.uk-card-default .uk-card-title{
-    margin-left: 50px;
+
+.uk-card-default .uk-card-title {
     font-size: 2em;
     font-weight: bolder;
     color:  rgb(31, 45, 73);
 }
-.ref_div{
+.ref_div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
 }
-.ref_div h3{
-    margin-left: 50px;
+.ref_div h3 {
+    margin-left: 30px;
     color:rgb(31, 45, 73);
     font-size: 2em;
 }
-.ref_div span{
-    margin-left: 50px;
+
+.ref_div h2 {
+    font-size: 2em ;
+}
+
+.ref_div span {
+    margin-left: 30px;
 }
