@@ -1,116 +1,73 @@
-<!DOCTYPE html>
- <html>
- <head>
-    <title>Viacheslav Dandaly</title>
- 	<meta charset="utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="sbros.css">
- 	<link rel="stylesheet" href="style.css">
-
-    </head>
- <body>
-    <div class="content">
-        <div class="box-contact">
-            <div class="photo">
-                <img src="photo.jpg" alt="#">
-            </div>
-            <h2>Contact</h2>
-            <hr>
-            <h3>Address</h3>
-            <p>Ukraine, Odessa</p>
-            <h3>Phone</h3>
-            <p>+38 063 344 69 96</p>
-            <h3>Email</h3>
-            <p>ViacheslavDan803@gmail.com</p>
-            <h3>GitHub</h3>
-            <p>https://github.com/okSYS007</p>
-            <h2>Education</h2>
-            <hr>
-            <p>2023<br>
-            "SkillFactory" courses Full stack python developer</p>
-            <p>2015<br>
-            "Abyss soft" courses 1C programmer</p>
-            <p>2014<br>
-            "Success technology" courses system administration</p>
-            <p>2015<br>
-            <strong>Master</strong><br> State Academy of Technical Regulation and Quality
-            </p>
-            <h2>Expertise</h2>
-            <hr>
-            <ul>
-                <li>HTML, CSS (Bootstrap)</li>
-                <li>JavaScript (vue.js)</li>
-                <li>Python (django)</li>
-                <li>Docker</li>
-                <li>SQL (NoSQL)</li>
-                <li>REST</li>
-                <li>Agile (Scrum)</li>
-            </ul>
-            <h2>Language</h2>
-            <hr>
-            <p><strong>English B1</strong></p>
-            <p><strong>Ukrainian Native</strong></p>
-            <p><strong>Russian Native</strong></p>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Резюме Вячеслава Дандали — Full Stack Python Developer. Опыт разработки, интеграций и автоматизации бизнес-процессов.">
+  <title>Вячеслав Дандали — Full Stack Python Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume">
+    <aside class="sidebar">
+      <a class="portrait-link" href="#main" aria-label="К содержанию резюме"><img class="portrait" src="photo.jpg" alt="Вячеслав Дандали" width="180" height="180"></a>
+      <nav class="profile-nav" aria-label="Версии резюме">
+        <a class="profile-nav__link active" href="index.html" aria-current="page">Full Stack Python</a>
+        <a class="profile-nav__link" href="1c.html">Программист 1С <span aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="sidebar-section" aria-labelledby="contacts-title">
+        <h2 id="contacts-title">Контакты</h2>
+        <dl class="contact-list">
+          <dt>Локация</dt><dd>Одесса, Украина</dd>
+          <dt>Телефон</dt><dd><a href="tel:+380633446996">+38 063 344 69 96</a></dd>
+          <dt>Email</dt><dd><a href="mailto:ViacheslavDan803@gmail.com">ViacheslavDan803@gmail.com</a></dd>
+          <dt>GitHub</dt><dd><a href="https://github.com/okSYS007">github.com/okSYS007</a></dd>
+        </dl>
+      </section>
+      <section class="sidebar-section" aria-labelledby="education-title">
+        <h2 id="education-title">Образование</h2>
+        <ul class="simple-list">
+          <li><span class="year">2023</span>SkillFactory — курс Full Stack Python Developer</li>
+          <li><span class="year">2015</span>Abyss Soft — курсы программиста 1С</li>
+          <li><span class="year">2014</span>«Технология успеха» — системное администрирование</li>
+          <li><span class="year">2013</span>Магистр, Одесская государственная академия технического регулирования и качества</li>
+        </ul>
+      </section>
+      <section class="sidebar-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Навыки</h2>
+        <ul class="compact-list"><li>HTML, CSS, Bootstrap</li><li>JavaScript, Vue.js</li><li>Python, Django</li><li>Docker</li><li>SQL, NoSQL</li><li>REST API</li><li>Agile, Scrum</li></ul>
+      </section>
+      <section class="sidebar-section" aria-labelledby="languages-title">
+        <h2 id="languages-title">Языки</h2>
+        <ul class="simple-list"><li>Украинский — родной</li><li>Русский</li><li>Английский — B1</li></ul>
+      </section>
+    </aside>
+    <main class="main" id="main">
+      <header class="hero">
+        <p class="eyebrow">Резюме · Full Stack Python</p>
+        <h1>Вячеслав Дандали</h1>
+        <p class="role">Full Stack Python Developer</p>
+        <p class="intro">Более 7 лет программировал на 1С и развиваюсь в Full Stack Python-разработке. Быстро осваиваю новые технологии, имею опыт проектирования решений, интеграций, оптимизации и работы с бизнес-задачами.</p>
+        <a class="switch-link" href="1c.html">Смотреть резюме программиста 1С <span aria-hidden="true">→</span></a>
+      </header>
+      <section class="main-section" aria-labelledby="experience-title">
+        <h2 id="experience-title">Опыт работы</h2>
+        <div class="timeline">
+          <article class="job"><p class="job__period">2021–2022</p><h3>Middle программист 1С</h3><p class="job__company">IT STEP Academy · Одесса</p><p>Выполнял задачи пользователей. Участвовал в проекте переноса данных в новую конфигурацию: планировал и разрабатывал функциональность, оптимизировал слабые места старой конфигурации и алгоритмы передачи данных. Исправлял ошибки.</p></article>
+          <article class="job"><p class="job__period">2021</p><h3>Senior программист 1С</h3><p class="job__company">Днепровский металлургический завод · Днепр</p><p>Руководил разработкой приложения «Планирование закупок» в конфигурации 1С:УТП. Проектировал архитектуру, дорабатывал унаследованную функциональность, составлял ТЗ и планировал спринты по Agile. Также решал срочные задачи пользователей.</p></article>
+          <article class="job"><p class="job__period">2020–2021</p><h3>Senior программист 1С</h3><p class="job__company">Atlas · Одесса</p><p>Оптимизировал конфигурацию, участвовал в подготовке внедрения WMS, создавал отчёты на базе СКД и дорабатывал мобильное приложение для торговли и инвентаризации.</p></article>
+          <article class="job"><p class="job__period">2017–2020</p><h3>Middle программист 1С</h3><p class="job__company">MD-Fashion · Киев</p><p>Разрабатывал и сопровождал решения 1С, оптимизировал и рефакторил код. Участвовал во внедрении WMS и ERP, проектировал REST-обмен между конфигурациями и дорабатывал REST API интернет-магазина. Получил опыт руководства командой.</p></article>
         </div>
-        <div class="about_me">
-            <h1 class="head">Viacheslav Dandaly</h1>
-            <h2 class="head">Full Stack Python Developer</h2>
-            <p class="head">I have been programming in 1C for more than 7 years. Dream of a career change. The desire and interest to learn something new helps to learn fast. I like to play chess (peak rating 1781 on chess.com). Professionally played soccer in youth. As a hobby, I am fond of learning hacking, and I also create my own big project, which, in my opinion, will bring me a lot of profit.</p>
-            <h2><strong>Experience</strong></h2>
-            <hr>
-            <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
-                <div class="vertical-line">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <div class="circle-left"></div>
-                        <h3 class="uk-card-title">2021-2022 IT STEP Academy l 3 Sadova St., Odessa</h3>
-                        <h3 class="uk-card-title">Middle Developer 1С</h3>
-                        <p>Carryied tasks from users. Participated in the project of transferring all data to a new configuration. As part of the transfer project, I planned and developed new functionality that optimized old configuration weak areas. Modified and also optimized the code for data trans</p>
-                    </div>
-                </div>
-                <div class="vertical-line">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <div class="circle-left"></div>
-                        <h3 class="uk-card-title">2021-2021 Dnepropetrovsk Metallurgical Factory l 31 Udarnikov St., Dnipro</h3>
-                        <h3 class="uk-card-title">Senior Developer 1С</h3>
-                        <p>Led a project to create the Procurement Planning application in the 1C:UPP configuration .Planned and designed the architecture for application implementation. Improved the procurement planning functionality from the previous programmer. Formed TOR for this project. Created sprints and tried to stick task schedules. Also did urgent tasks from users.</p>
-                    </div>
-                </div>
-                <div class="vertical-line">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <div class="circle-left"></div>
-                        <h3 class="uk-card-title">2020-2021 Atlas l 1/5 Nikolay Geft St., Odessa</h3>
-                        <h3 class="uk-card-title">Senior Developer 1С</h3>
-                        <p>Performed tasks from users. Led a large project to optimize the entire 1C configuration. Collected information (performed minor tasks) to implement a new WMS configuration in the enterprise warehouse. Created applications for monitoring company sales and many more data. Modified the mobile application that was used for selling goods in stores.</p>
-                    </div>
-                </div>
-                <div class="vertical-line">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <div class="circle-left"></div>
-                        <h3 class="uk-card-title">2017 - 2020 MD-Fashion l 12 Lugovaya St., Kiev</h3>
-                        <h3 class="uk-card-title">Middle Developer 1C</h3>
-                        <p>Modified the existing, and create a new applications. Engaged in technical support, creation and debugging of 1C applications. Optimized, refactored, fixed bugs in configurations. Participated in projects for the implementation of new 1C configurations such as: WMS, ERP. Developed a REST architecture for data exchange between configurations, and also finalized the REST API for online store. And still performed many tasks from users. Gained the skill to lead a team.</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h2 class="head"><strong>Reference</strong></h2>
-            <hr>
-            <div class="ref_div">
-                <div>
-                    <h3>Yuriy Baitser</h3>
-                    <span>Middle developer 1C, MD-Fashion</span><br>
-                    <span><strong>Phone: </strong>+38 093 148 7908</span>
-                </div>
-                <div>
-                    <h3>Konstantin Novojilov</h3>
-                    <span>Senior developer 1C, IT STEP Academy</span><br>
-                    <span><strong>Phone: </strong>+38 068 240 41 78</span>
-                </div>
-            </div>
+      </section>
+      <section class="main-section" aria-labelledby="references-title">
+        <h2 id="references-title">Рекомендации</h2>
+        <div class="references">
+          <div><h3>Юрий Байцер</h3><p>Middle программист 1С, MD-Fashion</p><a href="tel:+380931487908">+38 093 148 79 08</a></div>
+          <div><h3>Константин Новожилов</h3><p>Senior программист 1С, IT STEP Academy</p><a href="tel:+380682404178">+38 068 240 41 78</a></div>
         </div>
-    </div>
- </body>
- </html>
+      </section>
+      <footer class="footer">Другая специализация: <a href="1c.html">Программист 1С / Senior 1C Developer</a></footer>
+    </main>
+  </div>
+</body>
+</html>
