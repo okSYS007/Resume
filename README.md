@@ -28,7 +28,7 @@ python -m http.server 8000
 - `https://oksys007.github.io/Resume/` — Full Stack;
 - `https://oksys007.github.io/Resume/1c.html` — 1С.
 
-Публикация с этой локальной копии ещё не выполнялась. GitHub Pages автоматически опубликует обе страницы при push в `main`, если источник Pages настроен на GitHub Actions.
+Обе страницы опубликованы и проверены по HTTP 200 после отправки коммита `1cb7e30` в `main`. Последующие изменения будут публиковаться при push в `main` через GitHub Actions.
 
 ## Содержание и поддержка
 
